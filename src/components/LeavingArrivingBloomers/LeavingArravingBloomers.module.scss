@@ -1,0 +1,23 @@
+.container{
+  overflow-y: scroll;
+
+  .section_sortants{
+    color: #e4624a
+  }
+
+  .section_entrants{
+    color: #6ab196
+  }
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+}
+
+.error{
+  color: #c94b33;
+}
