@@ -36,7 +36,6 @@ export function transformMissions(missions: Mission[], beginDate: string, endDat
   const arriving: ArrivingLeaving = {};
   const leaving: ArrivingLeaving = {};
 
-  // Filtre et trie les missions arrivant et partant
   const arrivingMissions = filterAndSortMissions(missions, "beginDate", beginDate, endDate);
   const leavingMissions = filterAndSortMissions(missions, "endDate", beginDate, endDate);
 

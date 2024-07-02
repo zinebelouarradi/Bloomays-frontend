@@ -2,6 +2,7 @@ import React from "react";
 import { ArrivingLeaving } from "../../utils/utils";
 import styles from './BloomersList.module.scss'
 import circle from "../../icons/circle-icon.svg";
+import moment from "moment/moment";
 
 interface BloomersListProps {
   title: string;
@@ -21,7 +22,7 @@ const BloomersList: React.FC<BloomersListProps> = ({ title, bloomers, count, cla
           <div key={date}>
             <div className={styles.date}>
               <img src={circle} alt='circle icon'/>
-              <span className={classname}>{date}</span>
+              <span className={classname}>{moment(date).format('DD/MM/YYYY')}</span>
             </div>
 
             <div className={`${styles.bloomers} ${index === array.length - 1 ? styles.last : ''}`}
